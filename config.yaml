@@ -1,0 +1,61 @@
+- device1: Horor-play
+  port: 4723
+  desired_caps:
+    platformName: Android
+    deviceName: 小米9
+    platformVersion: 10
+    appPackage: com.dengta.date
+    noReset:  False
+    appActivity: com.dengta.date.login.WelcomeNotifActivity
+    automationName: uiautomator2
+    unicodeKeyboard: True
+    resetKeyboard: True
+    noSign: True
+    udid: 57eeaaa1
+
+- device2: Horor-20
+  port: 4723
+  desired_caps:
+    platformName: Android
+    deviceName: 荣耀20
+    platformVersion: 10
+    appPackage: com.dengta.date
+    noReset:  False
+    appActivity: com.dengta.date.login.WelcomeNotifActivity
+    automationName: uiautomator2
+    unicodeKeyboard: True
+    resetKeyboard: True
+    noSign: True
+    udid: 2NSDU20526034332
+
+- device1: Horor-play
+  port: 4730
+  desired_caps:
+    platformName: Android
+    deviceName: 6EJ7N18602014033
+    platformVersion: 9
+    appPackage: com.dengta.date
+    noReset:  !!bool False
+    appActivity: com.dengta.date.login.WelcomeActivity
+    automationName: uiautomator2
+    unicodeKeyboard: True
+    resetKeyboard: True
+    noSign: True
+    udid: 6EJ7N18602014033
+
+
+
+- device2: moniqi
+  port: 4750
+  desired_caps:
+    platformName: Android
+    deviceName: emulator-5554
+    platformVersion: 7
+    appPackage: com.yiqunkeji.yqlyz
+    noReset:  !!bool True
+    appActivity: .modules.main.ui.SplashActivity
+    automationName: uiautomator2
+    unicodeKeyboard: True
+    resetKeyboard: True
+    noSign: True
+    udid: emulator-5554

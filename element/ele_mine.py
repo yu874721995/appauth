@@ -1,0 +1,68 @@
+#!/usr/bin/python3
+# -*- coding:utf-8 -*-
+"""
+@author: dxl
+@file: ele_mine.py
+@time: 2021/8/20 10:41
+@desc: 
+"""
+
+
+class Mine:
+    mine = ('id=>com.dengta.date:id/icon',"我的",2)
+    personal_data = ('id=>com.dengta.date:id/frag_me_info_iv',"我的-个人资料的箭头")
+    data_off = ('id=>//com.dengta.date:id/top_bar_left_iv', "全局 页面返回上一层")
+    photo = ('id=>com.dengta.date:id/frag_me_avatar_iv',"我的-个人资料头像")
+    name = ('id=>com.dengta.date:id/me_nickname_tv',"我的-个人资料名字")
+    my_like = ('id=>com.dengta.date:id/me_good_friend_tv',"我的-我喜欢的")
+    like_my = ('id=>com.dengta.date:id/tv_me_attention_txt', "我的-喜欢我的")
+    recent_visit = ("id=>com.dengta.date:id/me_friend_fans_tv", '最近来访')
+    vip = ("id=>com.dengta.date:id/tv_me_item_noble", '会员')
+    network = ("id=>com.dengta.date:id/tv_me_item_contact", '人脉')
+    money = ("id=>com.dengta.date:id/tv_me_item_wallet", '钱包')
+    flowers = ("id=>com.dengta.date:id/tv_me_item_flower", '花花')
+    flowers_custom_click = ("id=>com.dengta.date:id/price_cl", '花花-自定义金额')
+    flowers_custom_edit = ("id=>com.dengta.date:id/et_dialog_custom_flower", '花花-自定义金额')
+
+    agent = ("id=>com.dengta.date:id/svga_me_agent", '代理商')
+    invite_people = ("id=>com.dengta.date:id/constra_me_item_contact", '邀请人脉')
+    recharge = ('xpath=>//android.widget.TextView[@text="充值"]', '充值')
+    withdraw = ('xpath=>//android.widget.TextView[@text="提现"]', '提现')
+    problem = ('xpath=>//android.widget.TextView[@text="提现"]', '常见问题与反馈')
+    set = ('xpath=>//android.widget.TextView[@text="设置"]', '设置')
+    info_name = ('id=>com.dengta.date:id/tv_info_name', '个人资料页-个人名称')
+    remark_name = ('id=>com.dengta.date:id/tv_info_remark_name_tv', '个人资料页-等他号')
+    info_copy = ('id=>com.dengta.date:id/tv_info_copy', '个人资料页-等他号复制')
+    auth_action = ('id=>com.dengta.date:id/user_auth_action_tv', '个人资料页-马上认证')
+    user_detail_add = ('id=>com.dengta.date:id/frag_user_detail_add_iv', '个人资料页-增加相册')
+    identity_name = ('id=>com.dengta.date:id/frag_real_identity_name_et', '个人资料页-实名认证-真实姓名')
+    identity_certific = ('id=>com.dengta.date:id/frag_real_identity_certific_et', '个人资料页-实名认证-身份证号码')
+    certific_submit = ('id=>com.dengta.date:id/frag_real_identity_certific_submit_tv', '个人资料页-实名认证-提交')
+    data_edit = ('xpath=>//android.widget.TextView[@text="编辑资料"]',"个人资料页-编辑资料")
+    friends_declaration = ('id=>com.dengta.date:id/frag_basic_info_edt', '个人资料页-编辑资料-交友宣言')
+    name_click_edit = ('xpath=>//android.widget.TextView[@text="昵称"]', "个人资料页-编辑资料-点击昵称")
+    name_edit = ('id=>com.dengta.date:id/dialog_nickname_edt', "个人资料页-编辑资料-输入昵称")
+    name_edit_ok = ('id=>//com.dengta.date:id/dialog_comm_confirm_tv', "个人资料页-编辑资料-昵称-确定")
+    name_edit_off = ('id=>//com.dengta.date:id/dialog_comm_cancel_tv', "个人资料页-编辑资料-昵称-取消")
+    birthday_edit = ('xpath=>//android.widget.TextView[@text="昵称"]', "个人资料页-编辑资料-出生年份")
+    height_edit = ('xpath=>//android.widget.TextView[@text="昵称"]', "个人资料页-编辑资料-身高")
+    monthly_income_edit = ('xpath=>//android.widget.TextView[@text="月收入"]', "个人资料页-编辑资料-月收入")
+    profession_edit = ('xpath=>//android.widget.TextView[@text="职业"]', "个人资料页-编辑资料-职业")
+    education_edit = ('xpath=>//android.widget.TextView[@text="学历"]', "个人资料页-编辑资料-学历")
+    marital_edit = ('xpath=>//android.widget.TextView[@text="婚姻状况"]', "个人资料页-编辑资料-婚姻状况")
+    hometown_edit = ('xpath=>//android.widget.TextView[@text="家乡"]', "个人资料页-编辑资料-家乡")
+    location_edit = ('xpath=>//android.widget.TextView[@text="所在地"]', "个人资料页-编辑资料-所在地")
+    personality_label_click = ('xpath=>//android.widget.TextView[@text="个性标签"]', "个人资料页-编辑资料-个性标签")
+    personality_label_edit = ('id=>//com.dengta.date:id/ll_personal_label', "个人资料页-编辑资料-个性标签-选择标签")
+    personality_label_del = ('id=>//com.dengta.date:id/iv_user_detail_baseInfo_delete', "个人资料页-编辑资料-个性标签-删除标签")
+    personality_label_ok = ('id=>//com.dengta.date:id/tv_personal_label_complete', "个人资料页-编辑资料-个性标签-完成")
+    perfect_ok = ('id=>//com.dengta.date:id/btn_confirm', "个人资料页-编辑资料-任意 去完善-确定")
+    perfect_off = ('id=>//com.dengta.date:id/btn_cancel', "个人资料页-编辑资料-任意 去完善-取消")
+    data_ok = ('id=>//com.dengta.date:id/btn_cancel', "个人资料页-编辑资料 保存")
+    sava_ok = ('id=>//com.dengta.date:id/dialog_comm_confirm_tv', "个人资料页-编辑资料 返回提示未保存 确定")
+    sava_off = ('id=>//com.dengta.date:id/dialog_comm_cancel_tv', "个人资料页-编辑资料 返回提示未保存 取消")
+    photo_tow = ('id=>//com.dengta.date:id/view_user_album_small_frame', "个人资料页 相册（第二张）")
+    photo_zoom = ('id=>//com.dengta.date:id/simpleDraweeView_user_info_avatar', "个人资料页 相册放大")
+    photo_zoom_del = ('id=>//com.dengta.date:id/tv_item_pic_video_preview_operate', "个人资料页 相册放大 删除")
+    photo_zoom_del_ok = ('id=>//com.dengta.date:id/dialog_del_pic_tv', "个人资料页 相册放大 删除 确定")
+    photo_zoom_del_off = ('id=>//com.dengta.date:id/dialog_del_pic_cancel_tv', "个人资料页 相册放大 删除 取消")

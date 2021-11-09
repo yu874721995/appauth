@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="0" hostname="USER-20191220RU" name="pytest" skipped="0" tests="1" time="6.910" timestamp="2021-08-19T15:27:18.134000"><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py&quot;, line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py&quot;, line 247, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 84, in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 208, in _multicall
+    return outcome.get_result()
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py&quot;, line 272, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 84, in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 208, in _multicall
+    return outcome.get_result()
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\runner.py&quot;, line 85, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\runner.py&quot;, line 94, in runtestprotocol
+    rep = call_and_report(item, &quot;setup&quot;, log)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\runner.py&quot;, line 188, in call_and_report
+    report = hook.pytest_runtest_makereport(item=item, call=call)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py&quot;, line 84, in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 203, in _multicall
+    gen.send(outcome)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\skipping.py&quot;, line 129, in pytest_runtest_makereport
+    rep = outcome.get_result()
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\runner.py&quot;, line 260, in pytest_runtest_makereport
+    return TestReport.from_item_and_call(item, call)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\reports.py&quot;, line 296, in from_item_and_call
+    longrepr = item._repr_failure_py(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\nodes.py&quot;, line 363, in _repr_failure_py
+    return excinfo.getrepr(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 635, in getrepr
+    return fmt.repr_excinfo(self)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 880, in repr_excinfo
+    reprtraceback = self.repr_traceback(excinfo_)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 824, in repr_traceback
+    reprentry = self.repr_traceback_entry(entry, einfo)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 786, in repr_traceback_entry
+    s = self.get_source(source, line_index, excinfo, short=short)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 725, in get_source
+    lines.extend(self.get_exconly(excinfo, indent=indent, markall=True))
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 734, in get_exconly
+    exlines = excinfo.exconly(tryshort=True).split(&quot;\n&quot;)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\_code\code.py&quot;, line 558, in exconly
+    lines = format_exception_only(self.type, self.value)
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\traceback.py&quot;, line 140, in format_exception_only
+    return list(TracebackException(etype, value, None).format_exception_only())
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\traceback.py&quot;, line 493, in __init__
+    context = TracebackException(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\traceback.py&quot;, line 493, in __init__
+    context = TracebackException(
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\traceback.py&quot;, line 493, in __init__
+    context = TracebackException(
+  [Previous line repeated 473 more times]
+  File &quot;C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\traceback.py&quot;, line 476, in __init__
+    _seen.add(id(exc_value))
+RecursionError: maximum recursion depth exceeded while calling a Python object</error></testcase></testsuite></testsuites>

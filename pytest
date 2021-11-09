@@ -1,0 +1,5 @@
+[pytest]
+markers=
+    smokeTest:冒烟测试
+    regressionTest:回归测试
+    fullTest:全量测试
